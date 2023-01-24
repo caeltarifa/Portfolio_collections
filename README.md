@@ -1,2 +1,5 @@
-# Portfolio_collections
-A set of functional code with applied cases
+# Machine Learning model collections
+## Predictions
+## Classifications
+## Clustering
+## Linear Classification
