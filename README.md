@@ -1,5 +1,6 @@
 # Machine Learning model collections
-## Predictions
-## Classifications
-## Clustering
-## Linear Classification
+## Folder ML by Python
+### Predictions
+### Classification
+### Clustering
+### Linear classification
