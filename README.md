@@ -1,6 +1,13 @@
 # Machine Learning model collections
-## Folder ML by Python
-### Predictions
-### Classification
-### Clustering
-### Linear classification
+ <details>
+    <summary><h3>ML models by Python</h3></summary>
+    <p>
+
+ - **Predictions**
+ - **Classification**
+ - **Clustering**
+ - **Linear classification**
+
+    </p>
+
+  </details>
