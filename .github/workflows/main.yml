@@ -21,11 +21,10 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Run Jupyter notebook
-      run: jupyter nbconvert --to script main.ipynb
+      run: jupyter nbconvert --to script main.ipynb && python3 main.py
+      
+    - name: Run script from Jupyter notebook
       run: python main.py
-      
-    #- name: Run script from Jupyter notebook
-      
 
     - name: Test model
       run: pytest tests/
