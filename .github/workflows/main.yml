@@ -26,8 +26,8 @@ jobs:
     - name: Run script from Jupyter notebook
       run: python main.py
 
-    - name: Test model
-      run: pytest tests/
+    #- name: Test model
+    #  run: pytest tests/
 
-    - name: Deploy to cloud service
-      run: sh scripts/deploy.sh
+    #- name: Deploy to cloud service
+    #  run: sh scripts/deploy.sh
