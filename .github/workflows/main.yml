@@ -21,7 +21,7 @@ jobs:
       run: pip install -r requirements.txt
 
     - name: Run Jupyter notebook
-      run: jupyter nbconvert --to script main.ipynb && python3 main.py
+      run: jupyter nbconvert --to python main.ipynb
       
     - name: Run script from Jupyter notebook
       run: python main.py
