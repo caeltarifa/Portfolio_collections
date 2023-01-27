@@ -22,6 +22,8 @@ jobs:
 
     - name: Run Jupyter notebook
       run: jupyter nbconvert --to script main.ipynb
+    
+    - name: Run script from Jupyter notebook
       run: python main.py
 
     - name: Test model
