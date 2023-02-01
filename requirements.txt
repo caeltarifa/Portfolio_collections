@@ -2,3 +2,4 @@ nbconvert
 keras
 tensorflow
 pytest
+pandas
