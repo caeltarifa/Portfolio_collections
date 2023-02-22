@@ -37,3 +37,49 @@ Seeking for a response, I reference this paper ["MapReduce: Simplified Data Proc
 3. Fault tolerance
 4. Flexibility
 
+## 2. Testing the code
+
+This code contains unit tests for the CheapestOperator class using PySpark. The tests cover different cases to ensure that the function cheapest_operator() returns the expected results for different input scenarios.
+
+**Features of the problem to test**
+
+* It is give price lists including price per minute for different phone number prefixes
+* When several prefixes match the same number, the longest one should be used.
+* If a price list does not include a certain prefix you cannot use that operator to dial numbers starting with that prefix
+* Assume that each price list can have thousands of entries but they will all fit together in memory.
+* Telephone numbers should be inputted in the same format as in price lists, for example “68123456789”
+* Handle any number of price lists (operators) and then can calculate which operator that is cheapest for a certain number. Find the cheapest operator for that number.
+* Data format of operators' price list. The left column represents the telephone prefix (country + area code) and the right column represents the operators price per minute for a number starting with that prefix.
+        
+    | Tool  | Examination |
+    |-------|-------------|
+    |  46732 | 1.1         |
+    | 46732 | 	 1.1       |
+    | 46	  | 0.17        |
+    | 4620	 | 0.0         |
+    | 468	  | 0.15        |
+
+**Prerequisites** In order to run these tests, you need to have ``PySpark`` and ``unittest`` installed in your environment.
+
+**Running the tests** To run the tests, simply execute the following command:
+```python test_cheapest_operator.py```
+
+**Test cases**
+
+The following test cases are included:
+* ``test_cheapest_operator() ``: Tests the case where the cheapest operator is found for a valid phone number.
+* ``test_invalid_number() ``: Tests the case where no operator is found for an invalid phone number.
+* ``test_operator_B_only() ``: Tests the case where only one operator is available in the dataset.
+* ``test_longest_prefix() ``: Tests the case where the longest prefix is chosen over the cheapest price.
+* ``test_multiple_operators_same_price() ``: Tests the case where multiple operators have the same price for a given prefix.
+* ``test_single_operator_single_prefix() ``: Tests the case where only one operator is available for a given prefix.
+* ``test_single_operator_multiple_prefixes() ``: Tests the case where one operator has multiple prefixes in the dataset.
+* ``test_same_price_different_operator() ``: Tests the case where different operators have the same price for a given prefix.
+* ``test_case_insensitive_dict() ``: Tests the case where the operator keys are case-insensitive.
+
+**Data sources**
+The input datasets for the tests are stored in the following files:
+
+op_a.txt: Dataset for Operator A <br>
+op_b.txt: Dataset for Operator B <br>
+op_c.txt: Dataset for Operator C <br>
