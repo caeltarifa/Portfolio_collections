@@ -41,13 +41,13 @@ Seeking for a response, I reference this paper ["MapReduce: Simplified Data Proc
 
 This code contains unit tests for the CheapestOperator class using PySpark. The tests cover different cases to ensure that the function cheapest_operator() returns the expected results for different input scenarios.
 
-**Features of the problem to test**
+**Problem features for testing**
 
-* It is give price lists including price per minute for different phone number prefixes
+* It is given price lists including price per minute for different phone number prefixes.
 * When several prefixes match the same number, the longest one should be used.
-* If a price list does not include a certain prefix you cannot use that operator to dial numbers starting with that prefix
+* If a price list does not include a certain prefix you cannot use that operator to dial numbers starting with that prefix.
 * Assume that each price list can have thousands of entries but they will all fit together in memory.
-* Telephone numbers should be inputted in the same format as in price lists, for example “68123456789”
+* Telephone numbers should be inputted in the same format as in price lists, for example “68123456789”.
 * Handle any number of price lists (operators) and then can calculate which operator that is cheapest for a certain number. Find the cheapest operator for that number.
 * Data format of operators' price list. The left column represents the telephone prefix (country + area code) and the right column represents the operators price per minute for a number starting with that prefix.
         
