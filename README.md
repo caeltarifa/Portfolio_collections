@@ -14,7 +14,7 @@
 
   </details>
 
-# Distributed computing
+# Distributed computing for [Multi matches phone prefixes](https://github.com/caeltarifa/Portfolio_collections/blob/main/Parallel_programming.ipynb)
 ## 1. About efficient solution and tools implied.
 Severals approaches have been considerated when looking up a solution for the solution:
 * Many operators and their lists of massive prefixes and prices
