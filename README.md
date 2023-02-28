@@ -14,9 +14,10 @@
 
   </details>
 
-# Distributed computing for [multi matches phone prefixes problem](https://github.com/caeltarifa/Portfolio_collections/tree/main/CheapestOperator_py)
-  
-### [*Try out python program on googleColab here*](https://colab.research.google.com/drive/1b6yQSDVvUD8KxADdzCJJXfkTeAZi5HGJ?usp=sharing)
+# Distributed computing 
+
+### Multi matches phone prefixes problem <h4> [(Folder here)](https://github.com/caeltarifa/Portfolio_collections/tree/main/CheapestOperator_py) </h4>
+### <h4> [*Try out python program on googleColab here*](https://colab.research.google.com/drive/1b6yQSDVvUD8KxADdzCJJXfkTeAZi5HGJ?usp=sharing) </h4>
 
 <details>
 <summary><h3> 1. Specifications </h3></summary>
